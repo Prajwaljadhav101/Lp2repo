@@ -1,0 +1,24 @@
+response = { "hi":"hello",
+            "hii":"hello",
+            "hey":"hello",
+            "hello":"hello",
+            "what is your name":"My name is Chatbot",
+            "what can you do?" : "I can help you with a variety of things. Just tell me what you need!",
+            "bye": "Goodbye!",
+            "goodbye": "See you later!",
+            "thanks":"You're welcome!",
+            "thankyou":"You're welcome!",
+            "how are you":"I am fine"
+        }
+
+
+print("Hello! I'm Chatbot. How can I help you today?")
+
+i = 1
+while(i == 1):
+    x = input("you: ")
+
+    if response.get(x):
+        print("Chatbot: ",response[x])
+    else:
+        print("Chatbot: I'm sorry, I didn't understand. Can you please rephrase that?")
